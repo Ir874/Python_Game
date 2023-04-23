@@ -1,5 +1,6 @@
 # Imports
 import pygame 
+import sys
 from pygame.locals import *
 from time import sleep
 import random
@@ -20,6 +21,7 @@ while True:
   for event in pygame.event.get():
     if event.type == QUIT:
       pygame.quit()
+      sys.exit()
 
     if event.type == pygame.KEYDOWN: # Detecting Key input
       
@@ -32,8 +34,8 @@ while True:
       if event.key == pygame.K_a: # Detecting A key
         print("A")
       
-      if event.key == pygame.K_j: # Detecting J key
-        print("J")
+      if event.key == pygame.K_f: # Detecting J key
+        print("F")
 
     
 
